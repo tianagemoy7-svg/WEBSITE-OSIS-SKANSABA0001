@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSIS SMK NEGERI 1 BANYUPUTIH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="awan awan-1">☁️</div>
+<div class="awan awan-2">☁️</div>
+<div class="awan awan-3">☁️</div>
+<div class="burung burung-1">🕊️</div>
+<div class="burung burung-2">🦅</div>
+<div class="burung burung-3">🐦</div>
+<div class="daun daun-1">🍃</div>
+<div class="daun daun-2">🍂</div>
+<div class="daun daun-3">🍃</div>
+<div class="bintang-latar">✨</div>
+<div class="bintang-latar b2">✦</div>
+<div class="bintang-latar b3">✨</div>
+<div class="bintang-latar b4">✧</div>
+<div class="partikel-cahaya"></div>
+
+<div class="hiasan lingkaran-1"></div>
+<div class="hiasan lingkaran-2"></div>
+<div class="hiasan kotak-miring"></div>
+<div class="hiasan bintang">✦</div>
+<div class="hiasan bintang2">✦</div>
+
+
+<div id="halamanAwal" class="layar-penuh">
+    <div class="kotak-sambutan">
+        <div class="bingkai-gambar">
+            <img src="logo.png" alt="Logo OSIS" class="logo-besar">
+        </div>
+        <h1>SELAMAT DATANG</h1>
+        <h2>DI WEBSITE RESMI OSIS</h2>
+        <h3>SMK NEGERI 1 BANYUPUTIH</h3>
+        <p class="motto">"Ramah, Kreatif, dan Berprestasi"</p>
+
+        <div class="wadah-sidikjari">
+            <svg class="lingkaran-luar" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="55" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="5"/>
+                <circle id="lingkaranMuat" cx="60" cy="60" r="55" fill="none" stroke="#ffd60a" stroke-width="5" stroke-dasharray="345.6" stroke-dashoffset="345.6" stroke-linecap="round"/>
+            </svg>
+            <div class="tombol-sidik" id="tombolMasuk">
+                <div class="ikon-jempol">👆</div>
+                <p class="tekan-5dtk">TEKAN LAMA</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="layarOpening" class="layar-penuh sembunyi">
+    <div class="wadah-opening">
+        <div class="latar-hiasan-op">
+            <div class="awan-op a1">☁️</div>
+            <div class="awan-op a2">☁️</div>
+            <div class="awan-op a3">☁️</div>
+            <div class="burung-op b1">🕊️</div>
+            <div class="burung-op b2">🦅</div>
+            <div class="burung-op b3">🐦</div>
+            <div class="bintang-op bt1">✨</div>
+            <div class="bintang-op bt2">⭐</div>
+            <div class="bintang-op bt3">💫</div>
+            <div class="bintang-op bt4">🌟</div>
+            <div class="bunga-op f1">🌸</div>
+            <div class="bunga-op f2">🌼</div>
+            <div class="bunga-op f3">🌺</div>
+            <div class="partikel-op p1">•</div>
+            <div class="partikel-op p2">•</div>
+            <div class="partikel-op p3">•</div>
+            <div class="partikel-op p4">•</div>
+        </div>
+
+        <div class="kotak-teks-opening">
+            <h2 id="teksOpening">SELAMAT DATANG DI WEBSITE</h2>
+            <p id="subOpening"></p>
+        </div>
+    </div>
+</div>
+
+
+<div id="halamanMenu" class="layar-penuh sembunyi">
+    <div class="isi-menu-penuh">
+        <div class="header-menu">
+            <img src="logo.png" alt="Logo" class="logo-kecil">
+            <h2>MENU UTAMA</h2>
+        </div>
+
+        <div class="grid-pilihan">
+            <div class="kartu-pilihan" onclick="tampilkanSosmed()">
+                <div class="ikon">📲</div>
+                <h3>Media Sosial</h3>
+            </div>
+            <div class="kartu-pilihan" onclick="tampilkanMenuPengumuman()">
+                <div class="ikon">📢</div>
+                <h3>Pengumuman</h3>
+            </div>
+            <div class="kartu-pilihan" onclick="tampilkanGaleri()">
+                <div class="ikon">🖼️</div>
+                <h3>Galeri Kegiatan</h3>
+            </div>
+            <div class="kartu-pilihan" onclick="tampilkanMusik()">
+                <div class="ikon">🎵</div>
+                <h3>Musik Pendidikan</h3>
+            </div>
+            <div class="kartu-pilihan" onclick="tampilkanRobot()">
+                <div class="ikon">🤖</div>
+                <h3>Tanya Seputar Sekolah</h3>
+            </div>
+            <div class="kartu-pilihan" onclick="tampilkanDaftarOsis()">
+                <div class="ikon">📝</div>
+                <h3>Pendaftaran OSIS</h3>
+            </div>
+            <div class="kartu-pilihan" onclick="tampilkanRegistrasiLomba()">
+                <div class="ikon">🏆</div>
+                <h3>Pendaftaran Lomba</h3>
+            </div>
+            <div class="kartu-pilihan" onclick="tampilkanLapor()">
+                <div class="ikon">💬</div>
+                <h3>Saran & Laporan</h3>
+            </div>
+            <div class="kartu-pilihan" onclick="tampilkanMenuBaru()">
+                <div class="ikon">🪙</div>
+                <h3>Memburu Harta Karun</h3>
+            </div>
+            <div class="kartu-pilihan" onclick="tampilkanSejarah()">
+                <div class="ikon">📜</div>
+                <h3>Sejarah OSIS</h3>
+            </div>
+        </div>
+
+        <button class="btn-kembali-bawah" onclick="kembaliKeAwal()">🔙 Kembali ke Halaman Awal</button>
+    </div>
+</div>
+
+
+<div id="halamanSosmed" class="layar-penuh sembunyi">
+    <div class="wadah">
+        <h2 class="judul-bagian">📲 MEDIA SOSIAL KAMI</h2>
+        <div class="kotak-tombol">
+            <a href="https://www.instagram.com/osisskansaba_?igsh=MW54anR2ZTdxdjJpcg==" target="_blank" class="tombol-sosmed ig">
+                📸 INSTAGRAM: @osisskansaba_
+            </a>
+            <a href="https://www.tiktok.com/@osissmkn1banyputih?_r=1&_t=ZS-98Jt9Ia83Mq" target="_blank" class="tombol-sosmed tiktok">
+                🎵 TIKTOK: @osissmkn1banyputih
+            </a>
+        </div>
+        <button class="btn-kembali" onclick="kembaliKeMenu()">🔙 Kembali</button>
+    </div>
+</div>
+
+<div id="halamanPengumuman" class="layar-penuh sembunyi">
+    <div class="wadah">
+        <h2 class="judul-bagian">📢 PENGUMUMAN</h2>
+        <div class="grid-pilihan">
+            <div class="kartu-pilihan" onclick="loginAdminPengumuman()">
+                <div class="ikon">🔐</div>
+                <h3>Admin Pengumuman</h3>
+            </div>
+            <div class="kartu-pilihan" onclick="lihatPengumuman()">
+                <div class="ikon">📋</div>
+                <h3>Lihat Pengumuman</h3>
+            </div>
+        </div>
+        <button class="btn-kembali" onclick="kembaliKeMenu()">🔙 Kembali</button>
+    </div>
+</div>
+
+<div id="halamanAdminPengumuman" class="layar-penuh sembunyi">
+    <div class="wadah">
+        <h2 class="judul-bagian">🔐 ADMIN PENGUMUMAN</h2>
+        <div class="form-kotak">
+            <input type="password" id="passPengumuman" placeholder="Masukkan Kata Sandi Admin">
+            <button class="btn-kirim" onclick="cekPassPengumuman()">Masuk</button>
+        </div>
+        <button class="btn-kembali" onclick="tampilkanMenuPengumuman()">🔙 Kembali</button>
+    </div>
+</div>
+
+<div id="halamanBuatPengumuman" class="layar-penuh sembunyi">
+    <div class="wadah">
+        <h2 class="judul-bagian">✏️ BUAT PENGUMUMAN BARU</h2>
+        <div class="form-kotak">
+            <textarea id="isiPengumuman" rows="5" placeholder="Tulis pengumuman di sini..." required></textarea>
+            <button class="btn-kirim btn-ungu mt-3" onclick="simpanPengumuman()">KIRIM PENGUMUMAN</button>
+        </div>
+        <div id="daftarPengumumanAdmin"></div>
+        <button class="btn-kembali" onclick="tampilkanMenuPengumuman()">🔙 Kembali</button>
+    </div>
+</div>
+
+<div id="halamanLihatPengumuman" class="layar-penuh sembunyi">
+    <div class="wadah">
+        <h2 class="judul-bagian">📋 PENGUMUMAN TERBARU</h2>
+        <div id="daftarPengumuman"></div>
+        <button class="btn-kembali" onclick="tampilkanMenuPengumuman()">🔙 Kembali</button>
+    </div>
+</div>
+
+<div id="halamanGaleri" class="layar-penuh sembunyi">
+    <div class="wadah">
+        <h2 class="judul-bagian">🖼️ GALERI KEGIATAN</h2>
+        <div class="grid-foto">
+            <img src="gambar1.jpg" class="item-foto" alt="Kegiatan 1">
+            <img src="gambar2.jpg" class="item-foto" alt="Kegiatan 2">
+            <img src="gambar3.jpg" class="item-foto" alt="Kegiatan 3">
+            <img src="gambar4.jpg" class="item-foto" alt="Kegiatan 4">
+            <img src="gambar5.jpg" class="item-foto" alt="Kegiatan 5">
+        </div>
+        <p class="catatan-galeri">*Ganti nama file gambar sesuai fotomu ya Kak</p>
+        <button class="btn-kembali" onclick="kembaliKeMenu()">🔙 Kembali</button>
+    </div>
+</div>
+
+<div id="halamanMusik" class="layar-penuh sembunyi">
+    <div class="wadah">
+        <h2 class="judul-bagian">🎵 MUSIK PENDIDIKAN</h2>
+        <div class="daftar-musik">
+            <div class="kotak-musik">
+                <div class="info-lagu"><h4>Lagu 1</h4><p class="judul-lagu">anak indonesia hebat</p></div>
+                <audio controls preload="none">
+                    <source src="lagu1.mp3" type="audio/mpeg">
+                
+            </div>
+            <div class="kotak-musik">
+                <div class="info-lagu"><h4>Lagu 2</h4><p class="judul-lagu">rukun sama teman</p></div>
+                <audio controls preload="none">
+                    <source src="lagu2.mp3" type="audio/mpeg">
+                
+            </div>
+            <div class="kotak-musik">
+                <div class="info-lagu"><h4>Lagu 3</h4><p class="judul-lagu">hari baru mpls</p></div>
+                <audio controls preload="none">
+                    <source src="lagu3.mp3" type="audio/mpeg">
+                
+            </div>
+            <div class="kotak-musik">
+                <div class="info-lagu"><h4>Lagu 4</h4><p class="judul-lagu">7 kebiasaan anak Indonesia</p></div>
+                <audio controls preload="none">
+                    <source src="lagu4.mp3" type="audio/mpeg">
+                
+            </div>
+        </div>
+        <button class="btn-kembali" onclick="kembaliKeMenu()">🔙 Kembali</button>
+    </div>
+</div>
+
+<div id="halamanRobot" class="layar-penuh sembunyi">
+    <div class="wadah">
+        <h2 class="judul-bagian">🤖 TANYA SEPUTAR SEKOLAH</h2>
+        <div class="daftar-tanya">
+            <button class="tombol-tanya" onclick="tanyaJawab(0)">Di SMKN 1 Banyuputih Menggunakan Sepatu Apa?</button>
+            <button class="tombol-tanya" onclick="tanyaJawab(1)">Kaos Kaki Harus Warna Apa?</button>
+            <button class="tombol-tanya" onclick="tanyaJawab(2)">Istigosah Biasanya Dibacakan Jam Berapa?</button>
+            <button class="tombol-tanya" onclick="tanyaJawab(3)">Apakah Siswa Boleh Pakai Sandal?</button>
+            <button class="tombol-tanya" onclick="tanyaJawab(4)">Lihat Teman Dibully Harus Bagaimana?</button>
+        </div>
+        <div id="kotakJawabRobot" class="kotak-jawaban sembunyi">
+            <div class="tanda-tanya">🤔</div>
+            <div class="teks-jawab" id="teksJawabRobot"></div>
+        </div>
+        <button class="btn-kembali" onclick="kembaliKeMenu()">🔙 Kembali</button>
+    </div>
+</div>
+
+<div id="halamanDaftarOsis" class="layar-penuh sembunyi">
+    <div class="wadah">
+        <h2 class="judul-bagian">📝 PENDAFTARAN OSIS</h2>
+        <div class="wadah-gambar-isi">
+            <img src="daftarosis.jpg" alt="Pendaftaran OSIS" class="gambar-isi">
+        </div>
+        <div class="form-kotak hiasan-dalam">
+            <input type="text" id="namaDaftar" placeholder="Nama Lengkap" required>
+            <input type="text" id="kelasDaftar" placeholder="Kelas & Jurusan" required>
+            <p style="text-align:center; font-weight:bold; margin:10px 0;">Pilih Tujuan Pengiriman:</p>
+            <label class="pilih-calon">
+                <input type="radio" name="tujuan" value="6283186723104" checked> 👤 Kamil
+            </label>
+            <label class="pilih-calon">
+                <input type="radio" name="tujuan" value="6285954571414"> 👤 Salma
+            </label>
+            <button class="btn-kirim btn-ungu mt-3" onclick="kirimDaftarOsis()">KIRIM PENDAFTARAN</button>
+        </div>
+        <button class="btn-kembali" onclick="kembaliKeMenu()">🔙 Kembali</button>
+    </div>
+</div>
+
+<div id="halamanLomba" class="layar-penuh sembunyi">
+    <div class="wadah">
+        <h2 class="judul-bagian">🏆 PENDAFTARAN LOMBA</h2>
+        <div class="form-kotak">
+            <input type="text" placeholder="Nama Lengkap" required>
+            <input type="text" placeholder="Kelas & Jurusan" required>
+            <input type="text" placeholder="Nama Lomba yang Diikuti" required>
+            <button class="btn-kirim btn-ungu mt-3">DAFTARKAN SAYA</button>
+        </div>
+        <button class="btn-kembali" onclick="kembaliKeMenu()">🔙 Kembali</button>
+    </div>
+</div>
+
+<div id="halamanLapor" class="layar-penuh sembunyi">
+    <div class="wadah">
+        <h2 class="judul-bagian">💬 SARAN & LAPORAN</h2>
+        <div class="form-kotak">
+            <input type="text" id="namaLapor" placeholder="Nama Lengkap (Boleh Nama Samaran)" required>
+            <input type="text" id="kelasLapor" placeholder="Kelas" required>
+            <textarea id="isiLapor" rows="4" placeholder="Tulis saran atau laporanmu..." required></textarea>
+            <button class="btn-kirim btn-ungu mt-3" onclick="kirimLapor()">KIRIM LAPORAN</button>
+        </div>
+        <button class="btn-kembali" onclick="kembaliKeMenu()">🔙 Kembali</button>
+    </div>
+</div>
+
+<div id="halamanHartaKarun" class="layar-penuh sembunyi">
+    <div class="wadah">
+        <h2 class="judul-bagian">🪙 MEMBURU HARTA KARUN</h2>
+        <div class="grid-pilihan">
+            <div class="kartu-pilihan" onclick="loginAdminHarta()">
+                <div class="ikon">🔐</div>
+                <h3>Buat Petunjuk</h3>
+            </div>
+            <div class="kartu-pilihan" onclick="lihatHarta()">
+                <div class="ikon">🗺️</div>
+                <h3>Cari Harta Karun</h3>
+            </div>
+        </div>
+        <button class="btn-kembali" onclick="kembaliKeMenu()">🔙 Kembali</button>
+    </div>
+</div>
+
+<div id="halamanAdminHarta" class="layar-penuh sembunyi">
+    <div class="wadah">
+        <h2 class="judul-bagian">🔐 ADMIN HARTA KARUN</h2>
+        <div class="form-kotak">
+            <input type="password" id="passHarta" placeholder="Kata Sandi Admin">
+            <button class="btn-kirim" onclick="cekPassHarta()">Masuk</button>
+        </div>
+        <button class="btn-kembali" onclick="tampilkanMenuBaru()">🔙 Kembali</button>
+    </div>
+</div>
+
+<div id="halamanBuatHarta" class="layar-penuh sembunyi">
+    <div class="wadah">
+        <h2 class="judul-bagian">✏️ BUAT PETUNJUK BARU</h2>
+        <div class="form-kotak">
+            <textarea id="soalHarta" rows="3" placeholder="Tulis Petunjuk..." required></textarea>
+            <input type="text" id="jawabHarta" placeholder="Kunci Jawaban" required>
+            <button class="btn-kirim btn-ungu mt-3" onclick="simpanHarta()">SIMPAN PETUNJUK</button>
+        </div>
+        <div id="daftarHartaAdmin"></div>
+        <button class="btn-kembali" onclick="tampilkanMenuBaru()">🔙 Kembali</button>
+    </div>
+</div>
+
+<div id="halamanLihatHarta" class="layar-penuh sembunyi">
+    <div class="wadah">
+        <h2 class="judul-bagian">🗺️ CARI HARTA KARUN</h2>
+        <div id="daftarHarta"></div>
+        <button class="btn-kembali" onclick="tampilkanMenuBaru()">🔙 Kembali</button>
+    </div>
+</div>
+
+<div id="halamanSejarah" class="layar-penuh sembunyi">
+    <div class="wadah">
+        <h2 class="judul-bagian">📜 SEJARAH OSIS</h2>
+        <div class="form-kotak" style="text-align:justify; line-height:1.7;">
+            <p><strong>Sejarah terbentuknya OSIS (Organisasi Siswa Intra Sekolah)</strong> di Indonesia bermula pada tahun 1970–1972 atas inisiatif Departemen Pendidikan dan Kebudayaan. Organisasi ini dibentuk untuk menyatukan berbagai organisasi siswa yang saat itu terpecah dan rentan disusupi kepentingan politik praktis, serta menetapkan satu wadah resmi pembinaan kesiswaan di sekolah.<br><br>
+            Sebelum tahun 1966 hingga awal 1970-an, organisasi pelajar sering kali dipengaruhi oleh partai politik, yang membuat siswa terkotak-kotak dalam kelompok yang saling bertentangan. Melalui pembentukan OSIS, pemerintah ingin agar kegiatan siswa berfokus pada pendidikan, bakat, minat, dan pengembangan karakter.<br><br>
+            Hingga saat ini OSIS menjadi wadah utama bagi siswa untuk berlatih kepemimpinan, kerja sama, tanggung jawab, dan bakti kepada sekolah.</p>
+        </div>
+        <button class="btn-kembali" onclick="kembaliKeMenu()">🔙 Kembali</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
